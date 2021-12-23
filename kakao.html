@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital,wght@1,100&family=Noto+Sans+KR:wght@300&display=swap"
+          rel="stylesheet">
+
+    <title>구버전 카카오</title>
+
+    <style>
+        * {
+            font-family: 'Noto Sans Display', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .wrap {
+            width: 480px;
+            height: 800px;
+            margin: auto;
+            display: block;
+            border: 1px solid gray;
+            border-radius: 5px;
+            
+            text-align: center;   
+        }
+
+        .top {
+            height: 500px;
+            position: relative;
+            background-image: url("https://blog.kakaocdn.net/dn/0mySg/btqCUccOGVk/nQ68nZiNKoIEGNJkooELF1/img.jpg");
+            z-index: 1;
+        }
+
+        .profile {
+            margin-top: 450px;
+            z-index: 3;
+            display: inline-block;
+
+            font-weight: bolder;
+        }
+
+        .title {
+            position: absolute;
+            width: 480px;
+            margin-top: 200px;
+            z-index: 2;
+        }
+
+        .pro-text {
+            margin: auto;
+            padding: 0px 50px 0px 50px;
+            font-weight: bolder;
+            transition-duration: 0.4s;       
+        }
+
+        .pro-text:hover {
+            margin: auto;
+            background-color: #ffffff8f; /* Green */
+            color: rgb(117, 117, 117);       
+        }
+        
+        .line{
+            margin: auto;
+            width: 30px;        
+        }
+        
+        .pro-img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            border: 1px solid rgb(184, 184, 184);
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(0,0,0,0.05);
+        }
+
+        .pro-img:hover{
+            box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 17px 50px 0 rgba(0,0,0,0.05);
+        }
+  
+        .btn {
+            margin: 200px 50px auto 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            font-size: 10px;
+        }
+
+        .btnimg {
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.05), 0 6px 20px 0 rgba(0,0,0,0.05);
+        }
+
+        .btnimg:hover{
+            box-shadow: 0 6px 12px 0 rgba(0,0,0,0.2), 0 17px 50px 0 rgba(0,0,0,0.05);
+        }
+
+        .btn-box {
+            margin: 0px auto 0px auto;
+            text-align: center;
+        }
+    </style>
+
+</head>
+<body>
+    <div class = "wrap">
+        <div class = "top">
+            <div class = "title">
+                <div class = "line"><hr></div>
+                <div class = "pro-text">     
+                    <h3>프로필을 입력해주세요.</h3>
+                </div>
+            </div>
+            <div class = "profile">
+                <div><img class = "pro-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS-jAjW5A29hVbQ60NYnrwOpQwZ9_pKrvqtXOCuRfH_mFWHgbde03yTdLeJTGNH7PNCyk&usqp=CAU" alt="프로필이미지"></div>
+                <div>조성현</div>
+            </div>
+        </div>
+        <div class = "btn">
+            <div class = "btn-box">
+                <img src="icons/나와의 채팅.png" alt="채팅탭" class = 'btnimg'>
+                <div>나와의 채팅</div>
+            </div>
+            <div class = "btn-box">
+                <img src="icons/프로필관리.png" alt="프로필관리탭" class = 'btnimg'>
+                <div>프로필 관리</div>
+            </div>
+            <div class = "btn-box">
+                <img src="icons/카스.png" alt="카카오스토리탭" class = 'btnimg'>
+                <div>카카오스토리</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
